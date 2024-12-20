@@ -10,6 +10,10 @@ const users = [{
     id: 3,
     name: 'kishor',
     email: 'kishor@gmail.com'
+},{
+    id: 4,
+    name: 'acya',
+    email: 'acya@gmail.com'
 }];
 
 module.exports = users;

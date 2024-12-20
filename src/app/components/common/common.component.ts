@@ -7,6 +7,9 @@ import { CommonService } from "./../../services/common.service";
 })
 export class CommonComponent {
 
+  base64Image: string = '';
+  ashish: string = ''
+
   constructor(private _service: CommonService) {}
 
   triggerClickEvent() {
@@ -30,6 +33,13 @@ export class CommonComponent {
       console.log(d);
     });
   }
+
+ 
+
+ 
+  
+
+
 
 
 }
