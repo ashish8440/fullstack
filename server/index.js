@@ -1,5 +1,5 @@
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const config = require('./config.json');
@@ -15,8 +15,15 @@ app.use(
 );
 app.use(cors());
 
+// to check the Request payload
 app.use((err, req, res, next) => {
   res.status(400).json({ error: 'Invalid request payload' });
+
+  /**
+   * IMP: this is use when the developer want to break the execution process so the
+   * application crass("app crashed - waiting for file changes before starting...") - use below code process.exit(1)
+  **/  
+  // process.exit(1);    //
 });
 
 /* Only With Send */
